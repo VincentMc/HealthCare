@@ -1,13 +1,36 @@
 html
   head
-    title O'Briens Healthcare
-    block scripts
-      script(src='/jquery.js')
+    title Modyerwell Medical Center
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Modyerwell Medical Center')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    block css
+      link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+      link(rel='stylesheet', href='/css/main.css')
   body
-    block content
-    block foot
-        p Phone: 0667112345 
-        p Email: obrienshealthcare@gmail.com
-        p Address: 123 Some Street
-        p Tralee
-        p Co: Kerry
+    div.content
+      block header
+      block content
+      block foot
+        div.container-fluid.padding
+          div.row.text-center
+            div.col-md-6
+              h5 Contact Us
+              hr
+              p Phone: 0667112345 
+              p Email: modyerwellMedicalCenter@gmail.com
+              p Address: 123 Some Street
+              p Tralee
+              p Co: Kerry
+            div.col-md-6
+              h5 Opening Hours
+              hr
+              p Monday-Friday 09:00 - 18:00
+              p Saturday 09:00 - 14:00
+              p Sunday Closed
+              p For Emergencies Contact SouthDoc
+            div.col-12 
+              hr
+              p.text-right Site Created by Vincent Mc Galey, vincemcgaley@gmail.com
+      block scripts

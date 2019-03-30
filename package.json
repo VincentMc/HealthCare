@@ -10,8 +10,10 @@
   "author": "VinceMC",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "express": "^4.16.4",
     "pug": "^2.0.3",
-    "sass": "^1.17.3"
+    "sass": "^1.17.3",
+    "serve-favicon": "^2.5.0"
   }
 }
