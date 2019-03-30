@@ -3,9 +3,30 @@ body {
 }
 
 div.content {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   background-color: white;
+}
+
+div.footer {
+  color: #dddddd;
+  background-color: #3f3f3f;
+  padding-top: 2rem;
+}
+
+hr.white {
+  border-top: 1px solid #dddddd;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+a.router-link {
+  font-size: 1.5rem;
+}
+
+a.router-link:hover {
+  color: #009a43 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

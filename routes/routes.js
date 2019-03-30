@@ -17,10 +17,10 @@ router.get('/about', (req, res) => {
 });
 
 //contact page
-router.get('/contact', (req, res) => {
+router.get('/services', (req, res) => {
     //res.render();
-    console.log("Contact Route");
-    res.status(200).render("pages/contact");
+    console.log("Services Route");
+    res.status(200).render("pages/services");
 });
 
 //gallery

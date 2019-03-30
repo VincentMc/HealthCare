@@ -11,26 +11,53 @@ html
   body
     div.content
       block header
+        nav.navbar.navbar-expand-md.navbar-light
+          div.container-fluid
+            a(href="/").navbar-brand
+              img(src="/images/small/logo.png")
+            button(type="button" data-toggle="collapse" data-target="#navbarResponsive").navbar-toggler
+              span.navbar-toggler-icon
+            div#navbarResponsive.collapse.navbar-collapse
+              ul.navbar-nav.ml-auto
+                li.nav-item
+                  a(href="/").nav-link.router-link Home
+                li.nav-item
+                  a(href="/services").nav-link.router-link Services
+                li.nav-item
+                  a(href="/gallery").nav-link.router-link Gallery
+                li.nav-item
+                  a(href="/about").nav-link.router-link About
+      div.row
+        div.col-md-6
+          p TExt
+        div.col-md-6
+          p Text
       block content
-      block foot
-        div.container-fluid.padding
+      block footer
+        div.container-fluid.footer
           div.row.text-center
             div.col-md-6
               h5 Contact Us
-              hr
-              p Phone: 0667112345 
-              p Email: modyerwellMedicalCenter@gmail.com
-              p Address: 123 Some Street
-              p Tralee
-              p Co: Kerry
+              hr.white
+              div.row
+                div.col-md-8.offset-md-2
+                  p.text-left Phone: <span class="float-right font-weight-bold">0667112345 </span>
+                  p.text-left Email: <span class="float-right font-weight-bold">Click Here</span>
+                  p.text-left Address: <span class="float-right font-weight-bold">123 Some Street </span>
+                  p.text-left Town: <span class="float-right font-weight-bold">Tralee </span>
+                  p.text-left Co: <span class="float-right font-weight-bold">Kerry </span>
             div.col-md-6
               h5 Opening Hours
-              hr
-              p Monday-Friday 09:00 - 18:00
-              p Saturday 09:00 - 14:00
-              p Sunday Closed
-              p For Emergencies Contact SouthDoc
+              hr.white
+              div.row
+                div.col-md-8.offset-md-2
+                  p.text-left Monday-Friday: <span class="float-right font-weight-bold">09:00 - 18:00</span>
+                  p.text-left Saturday: <span class="float-right font-weight-bold">09:00 - 14:00</span>
+                  p.text-left Sunday: <span class="float-right font-weight-bold">Closed</span>
+                  p.text-left Emergencies Contact: <span class="float-right font-weight-bold">SouthDoc</span>
             div.col-12 
-              hr
-              p.text-right Site Created by Vincent Mc Galey, vincemcgaley@gmail.com
-      block scripts
+              hr.white
+              p.text-center Site Created by Vincent Mc Galey, Email: vincemcgaley@gmail.com
+    block scripts
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")

@@ -1,9 +1,33 @@
+$brown: #123123;
+$green: #123123;
+
 body {
     background-color: rgb(236, 236, 236);
 }
 
 div.content {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     background-color: white;
+}
+
+div.footer {
+    color: rgb(221, 221, 221);
+    background-color: #3f3f3f;
+    padding-top: 2rem;
+}
+
+hr.white {
+    border-top: 1px solid rgb(221, 221, 221);
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+a.router-link {
+    font-size: 1.5rem; 
+}
+
+a.router-link:hover{
+    color: rgb(0, 154, 67) !important;
 }
