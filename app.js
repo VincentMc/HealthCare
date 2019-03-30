@@ -10,5 +10,8 @@ app.use('/', require('./routes/routes'));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
+app.use(function(req, res, next) {
+    next(createError(404));
+  });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+module.exports = app;
