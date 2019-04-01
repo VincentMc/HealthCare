@@ -3,7 +3,7 @@ body {
 }
 
 div.content {
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
   background-color: white;
 }
@@ -12,6 +12,11 @@ div.footer {
   color: #dddddd;
   background-color: #3f3f3f;
   padding-top: 2rem;
+}
+
+h3.social {
+  text-align: center;
+  color: #009a44;
 }
 
 hr.white {
@@ -26,7 +31,87 @@ a.router-link {
 }
 
 a.router-link:hover {
-  color: #009a43 !important;
+  color: #009a44;
+}
+
+div.social {
+  text-align: center;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 2rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #009a44;
+}
+
+#demo {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.green {
+  background-color: #6fb936;
+}
+
+.thumb {
+  margin-bottom: 30px;
+}
+
+.page-top {
+  margin-top: 85px;
+}
+
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #000;
+}
+
+.modal-footer {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,17 +7,18 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     block css
       link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+      link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css")
       link(rel='stylesheet', href='/css/main.css')
   body
-    div.content
+    .content
       block header
         nav.navbar.navbar-expand-md.navbar-light
-          div.container-fluid
+          .container-fluid
             a(href="/").navbar-brand
               img(src="/images/small/logo.png")
             button(type="button" data-toggle="collapse" data-target="#navbarResponsive").navbar-toggler
               span.navbar-toggler-icon
-            div#navbarResponsive.collapse.navbar-collapse
+            #navbarResponsive.collapse.navbar-collapse
               ul.navbar-nav.ml-auto
                 li.nav-item
                   a(href="/").nav-link.router-link Home
@@ -27,37 +28,62 @@ html
                   a(href="/gallery").nav-link.router-link Gallery
                 li.nav-item
                   a(href="/about").nav-link.router-link About
-      div.row
-        div.col-md-6
-          p TExt
-        div.col-md-6
-          p Text
       block content
       block footer
-        div.container-fluid.footer
-          div.row.text-center
-            div.col-md-6
+        .container-fluid.padding
+          .row.text.center.padding
+              .col-12
+                  h3.social Connect with us on social media
+              .col-12.social.padding
+                  a(href="#")
+                      i.fab.fa-twitter
+                  a(href="#")
+                      i.fab.fa-instagram
+                  a(href="#")
+                      i.fab.fa-youtube
+                  a(href="#")
+                      i.fab.fa-facebook
+        .container-fluid.footer
+          .row.text-center
+            .col-md-6
               h5 Contact Us
               hr.white
-              div.row
-                div.col-md-8.offset-md-2
+              .row
+                .col-md-8.offset-md-2
                   p.text-left Phone: <span class="float-right font-weight-bold">0667112345 </span>
-                  p.text-left Email: <span class="float-right font-weight-bold">Click Here</span>
+                  p.text-left Email: <span class="float-right font-weight-bold">modyerwellMedical@gmail.com</span>
                   p.text-left Address: <span class="float-right font-weight-bold">123 Some Street </span>
                   p.text-left Town: <span class="float-right font-weight-bold">Tralee </span>
                   p.text-left Co: <span class="float-right font-weight-bold">Kerry </span>
-            div.col-md-6
+            .col-md-6
               h5 Opening Hours
               hr.white
-              div.row
-                div.col-md-8.offset-md-2
+              .row
+                .col-md-8.offset-md-2
                   p.text-left Monday-Friday: <span class="float-right font-weight-bold">09:00 - 18:00</span>
                   p.text-left Saturday: <span class="float-right font-weight-bold">09:00 - 14:00</span>
                   p.text-left Sunday: <span class="float-right font-weight-bold">Closed</span>
                   p.text-left Emergencies Contact: <span class="float-right font-weight-bold">SouthDoc</span>
-            div.col-12 
+            .col-12 
               hr.white
               p.text-center Site Created by Vincent Mc Galey, Email: vincemcgaley@gmail.com
     block scripts
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
       script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+      script(src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
+      script(src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js")
+      script.
+        $(document).ready(function(){
+        $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+            
+            $(".zoom").hover(function(){
+                
+                $(this).addClass('transition');
+            }, function(){
+                
+                $(this).removeClass('transition');
+            });
+        });
